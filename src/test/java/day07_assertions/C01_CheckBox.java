@@ -17,7 +17,7 @@ public class C01_CheckBox {
     WebDriver driver;
     @Before
     public void setup(){
-        WebDriverManager.operadriver().setup();
+        WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().window().maximize();
@@ -39,7 +39,7 @@ public class C01_CheckBox {
         if (!checkBox2.isSelected()){
             checkBox2.click();
         }
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
     @After
     public void teardown(){

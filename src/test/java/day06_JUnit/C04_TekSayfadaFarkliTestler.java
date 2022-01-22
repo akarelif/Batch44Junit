@@ -71,6 +71,7 @@ public class C04_TekSayfadaFarkliTestler {
     }
     @AfterClass
     public static void ortaligiTopla(){
+
         driver.close();
     }
 }
